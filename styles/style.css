@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  background-color: #F4F1DE;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #e07a5f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 200px;
+  margin-right: 5%;
+}
+.header__button {
+  font-family: "Oswald", sans-serif;
+  margin-right: 5%;
+  background-color: #f2cc8f;
+  cursor: pointer;
+}
+
+.nav-panel {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.nav-panel__element {
+  display: flex;
+  background-color: #f2cc8f;
+  margin-right: 10%;
+  width: 200px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+}
+.nav-panel__element:hover {
+  background-color: #b89968;
+  color: #F4F1DE;
+}
+
+.h1-heading {
+  text-align: center;
+}
+
+.h2-heading {
+  margin-left: 20px;
+}
+
+.h3-heading {
+  text-align: center;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #81b29a;
+  margin-bottom: 50px;
+}
+.card__picture {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card__list {
+  align-self: flex-start;
+}
+
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  background-color: #e07a5f;
+  height: 60px;
+}
+
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  max-width: 400px;
+}
+.feedback__fieldset {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f2cc8f;
+}
+.feedback__input {
+  display: block;
+  margin: 0 auto;
+}
+.feedback__textarea {
+  display: block;
+  resize: none;
+  width: 98%;
+  margin: 0 auto;
+}
+.feedback__label {
+  text-align: center;
+}
+.feedback__button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.skip-link:not(:focus) {
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes shine {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes shine {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 574px) {
+  .header {
+    font-size: 0.5em;
+  }
+  .header__logo {
+    width: 100px;
+  }
+  .header__button {
+    font-size: 0.5em;
+  }
+}/*# sourceMappingURL=style.css.map */

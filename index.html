@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7 Лобов Иван</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <img class="header__logo" src="images/small-logo.png" alt="Логотип Московского Политеха">
+        <nav class="nav-panel">
+            <a class="nav-panel__element" id="first-link" href="#header">Хедер</a>
+            <a class="nav-panel__element" href="#selection">Подборка</a>
+            <a class="nav-panel__element" href="#feedback">Обратная связь</a>
+        </nav>
+    </header>
+    <main>
+        <a class="skip-link" href="#first-link">Навигация</a>
+        <a class="skip-link" href="#feedback__name">Форма</a>
+        <h1 class="h1-heading">Веб-технологии</h1>
+        
+        <section>
+            <h2 class="h2-heading">Подборка технологий и фреймворков</h2>
+            <div class="selection" id="selection">
+                <div class="card">
+                    <div>
+                        <h3 class="h3-heading">Фреймворки для frontend</h3>
+                        <img class="card__picture" src="images/front.PNG" alt="">
+                        <p class="card__text">Фронтенд — все, что браузер может читать, выводить на экран и / или запускать</p>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__item">Angular</li>
+                        <li class="card__item">React</li>
+                        <li class="card__item">Vue</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3 class="h3-heading">Фреймворки для backend</h3>
+                        <img class="card__picture" src="images/back.png" alt="">
+                        <p class="card__text">Бэкенд — все, что работает на сервере, то есть «не в браузере» или «на компьютере, подсоединенном к сети (обычно к Интернету), который отвечает на сообщения от других компьютеров».</p>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__item">Express</li>
+                        <li class="card__item">Django</li>
+                        <li class="card__item">Laravel</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3 class="h3-heading">Технологии для веб-разработки</h3>
+                        <img class="card__picture" src="images/tehnologies.PNG" alt="">
+                        <p class="card__text">Веб-разработка — процесс создания веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера.</p>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__item">CSS / HTML</li>
+                        <li class="card__item">PHP</li>
+                        <li class="card__item">JavaScript</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <section >
+            <div class="feedback" id="feedback">
+                <fieldset class="feedback__fieldset">
+                    <legend >Обратная связь</legend>
+                    <form action="" class="feedback__form">
+                        <label ><p class="feedback__label">Имя:</p>
+                        <input type="text" class="feedback__input" id="feedback__name"></label>
+                        <label ><p class="feedback__label">Почта:</p>
+                        <input type="text" class="feedback__input"></label>
+                        <label style= "grid-column-start: 1;
+                        grid-column-end: 3;"><p class="feedback__label">Предложение:</p>
+                        <textarea type="text" class="feedback__textarea"></textarea></label>
+                        <button class="feedback__button" type="submit">Отправить</button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"><p>Лобов Иван Кириллович 201-322 01.06.2021</p></footer>
+</body>
+</html>
